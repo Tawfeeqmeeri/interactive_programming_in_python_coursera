@@ -1,4 +1,3 @@
-import math 
 import random
 
 def name_to_number(name):
