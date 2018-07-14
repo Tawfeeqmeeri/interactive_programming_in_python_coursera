@@ -61,7 +61,6 @@ def rpsls(player_choice):
         print ("Computer wins!")
     print ()
 
-
 rpsls("rock")
 rpsls("Spock")
 rpsls("paper")
