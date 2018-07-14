@@ -67,7 +67,7 @@ def mystical_octosphere(question):
    time.sleep(3)
    print ("The cloudy liquid swirls, and a reply comes into view...")
    time.sleep(3)
-   print ("The mystical octosphere says..."+answer_fortune)
+   print ("The mystical octosphere says..."+ answer_fortune)
 
 
 mystical_octosphere("Will Croatia win the World Cup 2018?")
