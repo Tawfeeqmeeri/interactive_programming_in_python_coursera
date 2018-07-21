@@ -1,4 +1,6 @@
 import random
+import time
+
 
 def name_to_number(name):
     # delete the following pass statement and fill in your code below
@@ -48,21 +50,19 @@ def rpsls(player_choice):
     # convert comp_number to comp_choice using the function number_to_name()
     comp_choice = number_to_name(comp_number)
     
+    diff = (player_number - comp_number) %5
     # print out the message for computer's choice
+    time.sleep(1)
     print ("Computer chooses", comp_choice)
+    time.sleep(1)
     
-    if (comp_number + 1) == player_number:
-        print ("Player wins!")
-    elif (comp_number + 2) == player_number:
-        print ("Player wins!")
-    elif comp_number == player_number:
-        print ("Player and computer tie!")
-    else:
+    if diff == 0:
+        print ("Player and Computer tie!")
+    elif diff <= 2:
+        print( "Player wins!")
+    else: 
         print ("Computer wins!")
-    print ()
+    
 
-rpsls("rock")
-rpsls("Spock")
-rpsls("paper")
-rpsls("lizard")
-rpsls("scissors")
+
+rpsls(input("Choose your input: "))
